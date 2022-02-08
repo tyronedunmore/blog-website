@@ -1,0 +1,34 @@
+/*Mobile design anything smaller than 600px*/
+
+.container {
+    border: 3px solid black;
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-area: 
+    "hd" "hd"
+    "main" "main"
+    "main" "main"
+    "main" "main";
+}
+
+.box {
+    border: 1px solid black;
+    
+    
+    
+}
+
+#header {
+    grid-area: hd;
+    border: 1px solid black;
+}
+
+.content {
+    grid-area: main;
+}
