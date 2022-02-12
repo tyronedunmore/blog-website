@@ -1,25 +1,53 @@
 /*Mobile design anything smaller than 600px*/
-
 .container {
     border-radius: 10px;
     -moz-box-shadow: 3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px;
     box-shadow: 3px 3px 5px 6px rgb(197, 196, 196);
     background-color: white;
-    width: 800px;
     margin: auto;
+    width: auto;
     display: grid;
     grid-gap: 20px;
     padding: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 100px repeat(3, 200px) 25px;
+    grid-template-columns: 450px;
+    grid-auto-rows: 100px 50px repeat(3, 200px) 25px;
     grid-template-areas:
-    "header header"
-    "card1 card2"
-    "card3 card4"
-    "card5 card6"
-    "footer footer";
+    "header"
+    "nav"
+    "card1"
+    "card2"
+    "card3" 
+    "card4"
+    "card5" 
+    "card6"
+    "footer";
 } 
+
+/* Large Screens */
+@media (min-width: 600px) {
+    .container {
+        border-radius: 10px;
+        -moz-box-shadow: 3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px;
+        box-shadow: 3px 3px 5px 6px rgb(197, 196, 196);
+        background-color: white;
+        width: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 100px 50px repeat(3, 200px) 25px;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "footer footer";
+    } 
+}
 
 .box {
     padding: 10px;
@@ -38,17 +66,35 @@ h2, h4, p {
     grid-area: header;
     justify-self: center;
     text-decoration: underline;
+    margin: -20px;
 }
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+nav > p {
+    border: 1px solid black;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+
 .card1 {
     grid-area: card1;
     box-shadow: 3px 3px 5px 2px rgb(190, 187, 187);
 }
+
 .card2 {
     grid-area: card2;
     border: 1px solid blue;
     /* box-shadow: 3px 3px 5px rgb(6, 4, 97); */
     box-shadow: 3px 3px 5px 2px rgb(190, 187, 187);
 }
+
 .card3 {
     grid-area: card3;
     border: 1px solid rgb(48, 5, 48);
@@ -56,18 +102,21 @@ h2, h4, p {
     box-shadow: 3px 3px 5px 2px rgb(190, 187, 187);
     
 }
+
 .card4 {
     grid-area: card4;
     border: 1px solid yellow;
     /* box-shadow: 3px 3px 5px rgb(164, 167, 16); */
     box-shadow: 3px 3px 5px 2px rgb(190, 187, 187);
 }
+
 .card5 {
     grid-area: card5;
     border: 1px solid green;
     /* box-shadow: 3px 3px 5px rgb(15, 117, 20); */
     box-shadow: 3px 3px 5px 2px rgb(190, 187, 187);
 }
+
 .card6 {
     /* grid-area: card6; */
     border: 1px solid brown;
@@ -80,4 +129,5 @@ h2, h4, p {
     grid-area: footer;
     background-color: rgb(240, 240, 240);
     border-radius: 5px;
+    justify-self: center;
 }
