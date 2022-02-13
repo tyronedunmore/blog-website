@@ -10,7 +10,7 @@
     display: grid;
     grid-gap: 20px;
     padding: 20px;
-    grid-template-columns: 450px;
+    grid-template-columns: auto;
     grid-auto-rows: 100px 50px repeat(3, 200px) 25px;
     grid-template-areas:
     "header"
@@ -24,8 +24,8 @@
     "footer";
 } 
 
-/* Large Screens */
-@media (min-width: 600px) {
+/* Larger Screens */
+@media (min-width: 800px) {
     .container {
         border-radius: 10px;
         -moz-box-shadow: 3px 3px 5px 6px #ccc;
@@ -73,6 +73,8 @@ h2, h4, p {
     grid-area: nav;
     display: flex;
     justify-content: center;
+    padding: 25px;
+    border-top: 1px solid black;
     
     
 }
