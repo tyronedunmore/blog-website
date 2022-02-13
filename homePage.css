@@ -120,7 +120,7 @@ nav > p {
 }
 
 .card6 {
-    /* grid-area: card6; */
+    grid-area: card6;
     /* border: 1px solid brown; */
     /* box-shadow: 3px 3px 5px rgb(112, 60, 29); */
     box-shadow: 3px 3px 5px 2px rgb(190, 187, 187);
