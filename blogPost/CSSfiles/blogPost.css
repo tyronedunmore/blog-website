@@ -1,0 +1,9 @@
+/* layout for bigger screens */
+@import "/blogPost/CSSfiles/largeScreen.css";
+
+/* Layout for smaller screens */
+@import "/blogPost/CSSfiles/smallScreen.css";
+
+/* common style across all screen sizes */
+@import "/blogPost/CSSfiles/mainStyle.css"
+

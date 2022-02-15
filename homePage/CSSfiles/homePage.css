@@ -1,0 +1,11 @@
+/* Small screen sizes */
+@import "/homePage/CSSfiles/smallScreen.css";
+
+/* Large screen sizes */
+@import "/homePage/CSSfiles/largeScreen.css";
+
+/* Main style across all sizes */
+@import "/homePage/CSSfiles/mainStyle.css";
+
+
+

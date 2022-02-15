@@ -1,0 +1,24 @@
+/* Layout for largeer screens */
+@media (min-width: 800px) {
+    .container {
+        border-radius: 10px;
+        -moz-box-shadow: 3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px;
+        box-shadow: 3px 3px 5px 6px rgb(197, 196, 196);
+        background-color: white;
+        width: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 100px 50px repeat(3, 200px) 25px;
+        grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main side"
+        "main main main side"
+        "main main main side"
+        "footer footer footer footer";
+    } 
+}

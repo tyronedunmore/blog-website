@@ -1,0 +1,28 @@
+/*Mobile design anything smaller than 600px*/
+@media (max-width: 799px) {
+    .container {
+        border-radius: 10px;
+        -moz-box-shadow: 3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px;
+        box-shadow: 3px 3px 5px 6px rgb(197, 196, 196);
+        background-color: white;
+        margin: auto;
+        width: auto;
+        display: grid;
+        grid-gap: 20px;
+        padding: 20px;
+        grid-template-columns: auto;
+        grid-auto-rows: 100px 50px repeat(3, 200px) 25px;
+        grid-template-areas:
+        "header"
+        "nav"
+        "card1"
+        "card2"
+        "card3" 
+        "card4"
+        "card5" 
+        "card6"
+        "footer";
+    } 
+}
+
